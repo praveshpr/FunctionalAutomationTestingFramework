@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EmployeeSuite" duration-ms="30169" started-at="2020-03-02T06:15:24Z" finished-at="2020-03-02T06:15:54Z">
+    <groups>
+    </groups>
+    <test name="EmployeeTest" duration-ms="30169" started-at="2020-03-02T06:15:24Z" finished-at="2020-03-02T06:15:54Z">
+      <class name="com.emp.Tests.EmployeeTest">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="loginTest" is-config="true" duration-ms="15580" started-at="2020-03-02T17:15:24Z" finished-at="2020-03-02T17:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="createEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="createEmployeeTest" duration-ms="3530" started-at="2020-03-02T17:15:40Z" data-provider="getCreateEmpData" finished-at="2020-03-02T17:15:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Zip]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2020-02-20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[zip@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployeeTest -->
+        <test-method status="PASS" signature="createEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="createEmployeeTest" duration-ms="2942" started-at="2020-03-02T17:15:44Z" data-provider="getCreateEmpData" finished-at="2020-03-02T17:15:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Zip0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Co0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2020-02-20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[zip@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployeeTest -->
+        <test-method status="PASS" signature="updateEmployeeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="updateEmployeeTest" duration-ms="2377" started-at="2020-03-02T17:15:47Z" data-provider="getUpdateEmpData" finished-at="2020-03-02T17:15:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Zip Co]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Zip5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Co5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeTest -->
+        <test-method status="PASS" signature="deleteEmployeeTest(java.lang.String)[pri:2, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="deleteEmployeeTest" duration-ms="3597" started-at="2020-03-02T17:15:49Z" data-provider="getDeleteEmpData" finished-at="2020-03-02T17:15:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aim Aim]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployeeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="tearDown" is-config="true" duration-ms="681" started-at="2020-03-02T17:15:53Z" finished-at="2020-03-02T17:15:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.emp.Tests.EmployeeTest -->
+    </test> <!-- EmployeeTest -->
+  </suite> <!-- EmployeeSuite -->
+</testng-results>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EmployeeSuite">
+	<listeners>
+		<listener class-name="com.emp.Utils.Reporting"/>
+	</listeners>
+	<test name="EmployeeTest">
+		<classes>
+			<class name="com.emp.Tests.EmployeeTest"/>
+		</classes>
+	</test> <!-- EmployeeTest -->
+</suite> <!-- EmployeeSuite -->

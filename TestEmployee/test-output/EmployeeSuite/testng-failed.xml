@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeeSuite]">
+  <listeners>
+    <listener class-name="com.emp.Utils.Reporting"/>
+  </listeners>
+  <test name="EmployeeTest(failed)">
+    <classes>
+      <class name="com.emp.Tests.EmployeeTest">
+        <methods>
+          <include name="updateEmployeeTest" invocation-numbers="0"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.emp.Tests.EmployeeTest -->
+    </classes>
+  </test> <!-- EmployeeTest(failed) -->
+</suite> <!-- Failed suite [EmployeeSuite] -->
