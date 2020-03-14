@@ -113,7 +113,7 @@ public class BaseTest {
 
 	@DataProvider
 	public Object[][] getDeleteEmpData() throws IOException {
-		System.out.println("kFFFFFFFFFFF");
+		System.out.println("Data for delete Employee");
 		Object data[][] = utils.getTestData("DeleteEmployee");
 		System.out.println(data);
 		return data;

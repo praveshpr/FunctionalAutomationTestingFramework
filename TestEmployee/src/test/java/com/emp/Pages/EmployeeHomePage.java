@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 import com.emp.Tests.BaseTest;
 
-public class EmployeeHomePage extends BaseTest{
+public class EmployeeHomePage extends BaseTest {
 
 	public WebDriver driver;
 
