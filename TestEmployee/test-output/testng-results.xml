@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="EmployeeSuite" duration-ms="30169" started-at="2020-03-02T06:15:24Z" finished-at="2020-03-02T06:15:54Z">
+  <suite name="EmployeeSuite" duration-ms="59408" started-at="2020-04-04T01:02:28Z" finished-at="2020-04-04T01:03:28Z">
     <groups>
     </groups>
-    <test name="EmployeeTest" duration-ms="30169" started-at="2020-03-02T06:15:24Z" finished-at="2020-03-02T06:15:54Z">
+    <test name="EmployeeTest" duration-ms="59408" started-at="2020-04-04T01:02:28Z" finished-at="2020-04-04T01:03:28Z">
       <class name="com.emp.Tests.EmployeeTest">
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="loginTest" is-config="true" duration-ms="15580" started-at="2020-03-02T17:15:24Z" finished-at="2020-03-02T17:15:40Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="loginTest" is-config="true" duration-ms="21855" started-at="2020-04-04T12:02:28Z" finished-at="2020-04-04T12:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="createEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="createEmployeeTest" duration-ms="3530" started-at="2020-03-02T17:15:40Z" data-provider="getCreateEmpData" finished-at="2020-03-02T17:15:44Z">
+        <test-method status="PASS" signature="createEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="createEmployeeTest" duration-ms="5791" started-at="2020-04-04T12:02:51Z" data-provider="getCreateEmpData" finished-at="2020-04-04T12:02:57Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createEmployeeTest -->
-        <test-method status="PASS" signature="createEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="createEmployeeTest" duration-ms="2942" started-at="2020-03-02T17:15:44Z" data-provider="getCreateEmpData" finished-at="2020-03-02T17:15:47Z">
+        <test-method status="PASS" signature="createEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="createEmployeeTest" duration-ms="5146" started-at="2020-04-04T12:02:57Z" data-provider="getCreateEmpData" finished-at="2020-04-04T12:03:02Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createEmployeeTest -->
-        <test-method status="PASS" signature="updateEmployeeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="updateEmployeeTest" duration-ms="2377" started-at="2020-03-02T17:15:47Z" data-provider="getUpdateEmpData" finished-at="2020-03-02T17:15:49Z">
+        <test-method status="PASS" signature="updateEmployeeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="updateEmployeeTest" duration-ms="5074" started-at="2020-04-04T12:03:02Z" data-provider="getUpdateEmpData" finished-at="2020-04-04T12:03:07Z">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateEmployeeTest -->
-        <test-method status="PASS" signature="deleteEmployeeTest(java.lang.String)[pri:2, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="deleteEmployeeTest" duration-ms="3597" started-at="2020-03-02T17:15:49Z" data-provider="getDeleteEmpData" finished-at="2020-03-02T17:15:53Z">
+        <test-method status="FAIL" signature="deleteEmployeeTest(java.lang.String)[pri:2, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="deleteEmployeeTest" duration-ms="20031" started-at="2020-04-04T12:03:07Z" data-provider="getDeleteEmpData" finished-at="2020-04-04T12:03:27Z">
           <params>
             <param index="0">
               <value>
@@ -92,10 +92,76 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='employee-list']/li[contains(text(),'Aim Aim')]"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-70M1UJL', ip: '192.168.1.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pravesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50242}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a2aa974e522040c19fe1e818e4bf538f
+*** Element info: {Using=xpath, value=//*[@id='employee-list']/li[contains(text(),'Aim Aim')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='employee-list']/li[contains(text(),'Aim Aim')]"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-70M1UJL', ip: '192.168.1.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pravesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50242}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a2aa974e522040c19fe1e818e4bf538f
+*** Element info: {Using=xpath, value=//*[@id='employee-list']/li[contains(text(),'Aim Aim')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.emp.Pages.EmployeeHomePage.getEmpToDelete(EmployeeHomePage.java:68)
+	at com.emp.Tests.EmployeeTest.deleteEmployeeTest(EmployeeTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteEmployeeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="tearDown" is-config="true" duration-ms="681" started-at="2020-03-02T17:15:53Z" finished-at="2020-03-02T17:15:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.emp.Tests.EmployeeTest@7d9d1a19]" name="tearDown" is-config="true" duration-ms="628" started-at="2020-04-04T12:03:27Z" finished-at="2020-04-04T12:03:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

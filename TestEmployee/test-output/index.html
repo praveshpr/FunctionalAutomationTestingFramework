@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-EmployeeSuite">
-              <span class="suite-name border-passed">EmployeeSuite</span>
+              <span class="suite-name border-failed">EmployeeSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-EmployeeSuite">
-                    <span>D:\pravesh data\h drive\eclipse Workspace\TestEmployee\RunTest.xml</span>
+                    <span>D:\pravesh data\h drive\eclipse Workspace\TestEmployee\TestEmployee\RunTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EmployeeSuite" class="hide-methods failed suite-EmployeeSuite"> (hide)</a> <!-- hide-methods failed suite-EmployeeSuite -->
+                      <a href="#" panel-name="suite-EmployeeSuite" class="show-methods failed suite-EmployeeSuite"> (show)</a> <!-- show-methods failed suite-EmployeeSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EmployeeSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeeSuite" title="com.emp.Tests.EmployeeTest" hash-for-method="deleteEmployeeTest(Aim Aim)">deleteEmployeeTest(Aim Aim)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EmployeeSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,11 +126,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-EmployeeSuite" title="com.emp.Tests.EmployeeTest" hash-for-method="deleteEmployeeTest(Aim Aim)">deleteEmployeeTest(Aim Aim)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-EmployeeSuite" title="com.emp.Tests.EmployeeTest" hash-for-method="updateEmployeeTest(Zip Co, Zip5, Co5)">updateEmployeeTest(Zip Co, Zip5, Co5)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -132,6 +141,45 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-EmployeeSuite" class="panel EmployeeSuite">
+          <div class="suite-EmployeeSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.emp.Tests.EmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteEmployeeTest(Aim Aim)">
+                  </a> <!-- deleteEmployeeTest(Aim Aim) -->
+                  <span class="method-name">deleteEmployeeTest</span>
+                  <span class="parameters">(Aim Aim)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;employee-list&apos;]/li[contains(text(),&apos;Aim Aim&apos;)]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-70M1UJL&apos;, ip: &apos;192.168.1.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pravesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50242}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a2aa974e522040c19fe1e818e4bf538f
+*** Element info: {Using=xpath, value=//*[@id=&apos;employee-list&apos;]/li[contains(text(),&apos;Aim Aim&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.emp.Pages.EmployeeHomePage.getEmpToDelete(EmployeeHomePage.java:68)
+	at com.emp.Tests.EmployeeTest.deleteEmployeeTest(EmployeeTest.java:76)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeeSuite-class-failed -->
           <div class="suite-EmployeeSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -156,14 +204,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteEmployeeTest(Aim Aim)">
-                  </a> <!-- deleteEmployeeTest(Aim Aim) -->
-                  <span class="method-name">deleteEmployeeTest</span>
-                  <span class="parameters">(Aim Aim)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="updateEmployeeTest(Zip Co, Zip5, Co5)">
                   </a> <!-- updateEmployeeTest(Zip Co, Zip5, Co5) -->
                   <span class="method-name">updateEmployeeTest</span>
@@ -175,7 +215,7 @@
         </div> <!-- panel EmployeeSuite -->
         <div panel-name="test-xml-EmployeeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\pravesh data\h drive\eclipse Workspace\TestEmployee\RunTest.xml</span>
+            <span class="header-content">D:\pravesh data\h drive\eclipse Workspace\TestEmployee\TestEmployee\RunTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -231,24 +271,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'deleteEmployeeTest')
 data.setCell(0, 2, 'com.emp.Tests.EmployeeTest')
-data.setCell(0, 3, 3597);
+data.setCell(0, 3, 20031);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createEmployeeTest')
 data.setCell(1, 2, 'com.emp.Tests.EmployeeTest')
-data.setCell(1, 3, 3530);
+data.setCell(1, 3, 5791);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createEmployeeTest')
 data.setCell(2, 2, 'com.emp.Tests.EmployeeTest')
-data.setCell(2, 3, 2942);
+data.setCell(2, 3, 5146);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'updateEmployeeTest')
 data.setCell(3, 2, 'com.emp.Tests.EmployeeTest')
-data.setCell(3, 3, 2377);
+data.setCell(3, 3, 5074);
 window.suiteTableData['EmployeeSuite']= { tableData: data, tableDiv: 'times-div-EmployeeSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-EmployeeSuite">
               </div> <!-- times-div-EmployeeSuite -->
             </div> <!-- times-div -->
@@ -281,23 +321,25 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">createEmployeeTest(Zip, Co, 2020-02-20, zip@gmail.com)</span>
-                <span class="method-start">16439 ms</span>
+                <span class="method-start">22390 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createEmployeeTest(Zip0, Co0, 2020-02-20, zip@gmail.com)</span>
-                <span class="method-start">19986 ms</span>
+                <span class="method-start">28190 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateEmployeeTest(Zip Co, Zip5, Co5)</span>
-                <span class="method-start">23030 ms</span>
+                <span class="method-start">33374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">deleteEmployeeTest(Aim Aim)</span>
-                <span class="method-start">25499 ms</span>
+                <span class="method-start">38476 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29097 ms</span>
+                <span class="method-start">58510 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

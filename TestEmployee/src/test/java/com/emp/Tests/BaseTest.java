@@ -42,21 +42,17 @@ public class BaseTest {
 		logger = Logger.getLogger("EmployeeTechAssignment");
 		PropertyConfigurator.configure("log4j.properties");
 		browserName = readConfig.getBrowser();
-	
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-features=VizDisplayCompositor");
 			driver = new ChromeDriver(options);
-
 		} else if (browserName.equalsIgnoreCase("FF")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
-
 		else if (browserName.equalsIgnoreCase("ie")) {
 			DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
-
 			ieCapabilities.setCapability("nativeEvents", false);
 			ieCapabilities.setCapability("unexpectedAlertBehaviour", "accept");
 			ieCapabilities.setCapability("ignoreProtectedModeSettings", true);
@@ -65,11 +61,9 @@ public class BaseTest {
 			WebDriverManager.iedriver().arch32().setup();
 			driver = new InternetExplorerDriver(ieCapabilities);
 		}
-
 		else {
 			logger.info("Provide proper browser name in config properties");
 		}
-
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

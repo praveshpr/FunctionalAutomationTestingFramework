@@ -120,3 +120,14 @@
 2020-03-02 17:15:49,983 - EmployeeTechAssignment -INFO - ****deleteEmployee test started****
 2020-03-02 17:15:53,577 - EmployeeTechAssignment -INFO - ****deleteEmployee test finished successfully****
 2020-03-02 17:15:54,260 - EmployeeTechAssignment -INFO - Browse closed successfully 
+2020-04-04 12:02:50,211 - EmployeeTechAssignment -INFO - Launched Application successfully
+2020-04-04 12:02:50,216 - EmployeeTechAssignment -INFO - ****Login test started****
+2020-04-04 12:02:50,823 - EmployeeTechAssignment -INFO - ****Login test finished successfully****
+2020-04-04 12:02:51,362 - EmployeeTechAssignment -INFO - ****createEmployee test started****
+2020-04-04 12:02:57,149 - EmployeeTechAssignment -INFO - ****createEmployee test finished successfully****
+2020-04-04 12:02:57,159 - EmployeeTechAssignment -INFO - ****createEmployee test started****
+2020-04-04 12:03:02,304 - EmployeeTechAssignment -INFO - ****createEmployee test finished successfully****
+2020-04-04 12:03:02,343 - EmployeeTechAssignment -INFO - ****updateEmployee test started****
+2020-04-04 12:03:07,416 - EmployeeTechAssignment -INFO - ****updateEmployee test finished successfully****
+2020-04-04 12:03:07,444 - EmployeeTechAssignment -INFO - ****deleteEmployee test started****
+2020-04-04 12:03:28,106 - EmployeeTechAssignment -INFO - Browse closed successfully 

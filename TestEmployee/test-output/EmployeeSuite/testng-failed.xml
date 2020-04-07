@@ -8,7 +8,7 @@
     <classes>
       <class name="com.emp.Tests.EmployeeTest">
         <methods>
-          <include name="updateEmployeeTest" invocation-numbers="0"/>
+          <include name="deleteEmployeeTest" invocation-numbers="0"/>
           <include name="loginTest"/>
           <include name="tearDown"/>
         </methods>
