@@ -43,6 +43,7 @@ public class LoginPage extends BaseTest {
 		}
 	}
 
+	//To set Password
 	public void setpassword(String password) {
 		try {
 			textBox_password.clear();
